@@ -11,13 +11,20 @@
 /*Custom properties*/
 :root {
     --dark-color: #2d2c2c;
-    --purple-solid: #350a4f;
-    --purple-transparent: rgba(53, 10, 79, .7);
-    --purple-transparent-alt: rgba(53, 10, 79, .5);
-    --purple-light: #8f50fb;
-    --yellow-solid: #fa9e2c;
-    --gradient-color: linear-gradient(to right, var(--yellow-solid), var(--purple-light));
-    --gradient-color-alt: linear-gradient(to right, var(--purple-light), var(--yellow-solid));
+    /*--purple-solid: #350a4f;*/
+    --blue-solid: #061a74;
+    /*--purple-transparent: rgba(53, 10, 79, .7);*/
+    --blue-transparent: rgba(10, 34, 79, 0.7);
+    /*--purple-transparent-alt: rgba(53, 10, 79, .5);*/
+    --blue-transparent-alt: rgba(10, 42, 79, 0.5);
+    /*--purple-light: #8f50fb;*/
+    --blue-light: rgb(109, 168, 245);  /*for new dentel theam*/
+    --green-solid: rgb(50, 252, 158);
+   /* --yellow-solid: #fa9e2c;*/
+   /* --gradient-color: linear-gradient(to right, var(--yellow-solid), var(--purple-light));*/
+   /* --gradient-color-alt: linear-gradient(to right, var(--purple-light), var(--yellow-solid)); */
+    --gradient-color: linear-gradient(to right, var(--blue-light), var(--green-solid));
+    --gradient-color-alt: linear-gradient(to right, var(--green-solid), var(--blue-light));
 }
 /*Global style*/
 html{
@@ -77,11 +84,11 @@ section{
 }
 
 .btn-pur{
-    background-color: var(--purple-solid);
+    background-color: var(--blue-solid);
 }
 
 .btn-pur:hover{
-    background-color: #56247f;
+    background-color: #324183;
 }
 
 .dots{
@@ -99,7 +106,7 @@ section{
     position: fixed;
     top: 0;
     left: 0;
-    background-color: var(--purple-transparent);
+    background-color: var(--blue-transparent);
     z-index: 999;
 }
 
@@ -140,7 +147,7 @@ section{
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: var(--purple-solid);
+    background-color: var(--blue-solid);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -174,7 +181,7 @@ section{
 .hero{
     width: 100%;
     height: 100vh;
-    background: url("./images/hero_background.jpg") center no-repeat;
+    background: url("./images/hero_background(1).jpg") center no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -190,7 +197,7 @@ section{
     left: 0;
     width: inherit;
     height: inherit;
-    background-color: var(--purple-transparent-alt);
+    background-color: var(--blue-transparent-alt);
     z-index: -1;
 }
 
@@ -296,7 +303,7 @@ section{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--purple-transparent-alt);
+    background-color: var(--blue-transparent-alt);
     z-index: -1;
 }
 
