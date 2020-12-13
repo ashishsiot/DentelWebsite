@@ -12,14 +12,14 @@
 :root {
     --dark-color: #2d2c2c;
     /*--purple-solid: #350a4f;*/
-    --blue-solid: #061a74;
+    --blue-solid: #2d4094;
     /*--purple-transparent: rgba(53, 10, 79, .7);*/
     --blue-transparent: rgba(10, 34, 79, 0.7);
     /*--purple-transparent-alt: rgba(53, 10, 79, .5);*/
     --blue-transparent-alt: rgba(10, 42, 79, 0.5);
     /*--purple-light: #8f50fb;*/
     --blue-light: rgb(98, 160, 241);  /*for new dentel theam*/
-    --green-solid: rgb(50, 252, 158);
+    --green-solid: rgb(49, 189, 79);
     --yellow-solid: #fa9e2c;
    /* --gradient-color: linear-gradient(to right, var(--yellow-solid), var(--purple-light));*/
    /* --gradient-color-alt: linear-gradient(to right, var(--purple-light), var(--yellow-solid)); */
@@ -397,7 +397,7 @@ section{
 
 .room-name{
     font-size: 2.6rem;
-    background-color: var(--yellow-solid);
+    background-color: var(--green-solid);
     color: #fff;
     padding: .5rem 2rem;
     position: absolute;
@@ -410,7 +410,7 @@ section{
     display: block;
     font-size: 3.6rem;
     font-weight: bold;
-    color: var(--yellow-solid);
+    color: var(--green-solid);
 }
 
 .per-night{
@@ -426,7 +426,7 @@ section{
 }
 
 .room-btn:hover{
-    color: var(--yellow-solid);
+    color: var(--green-solid);
 }
 
 /*Contact section styles*/
@@ -504,7 +504,7 @@ section{
     width: 4rem;
     height: 4rem;
     font-size: 2rem;
-    border: 2px solid var(--yellow-solid);
+    border: 2px solid var(--green-solid);
     border-radius: 50%;
     display: flex;
     margin-right: 1rem;
@@ -512,7 +512,7 @@ section{
 }
 
 .sm-link:hover{
-    background-color: var(--yellow-solid);
+    background-color: var(--green-solid);
     color: var(--dark-color);
 }
 
@@ -607,13 +607,16 @@ section{
         margin-right: 3rem;
         margin-bottom: 0;
     }
+    .nav-item:hover{
+        color: #6c87ff;                 /*Doesn't work*/
+    }
     .nav-link{
         font-size: 1.3rem;
         font-weight: normal;
         transition: color .5;
     }
     .nav-list:hover{
-        color: var(--yellow-solid);
+        color: var(--green-solid);
     }
 
     /*hero section styles*/
