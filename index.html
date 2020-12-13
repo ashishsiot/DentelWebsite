@@ -56,7 +56,7 @@
 
         <section class="booking">
             <div class="container">
-                <form action="" class="form">
+                <form action="" class="book-form">
                     <div class="input-group">
                         <lable for="destination" class="input-lable">Destination</lable>
                         <input type="text" class="input" id="destination">
@@ -185,10 +185,12 @@
                 </h5>
                 <div class="grid rooms-grid">
                     <div class="grid-item featured-rooms">
-                        <img class="room-image" src="./images/room_1.jpg" alt="">
-                        <h5 class="room-name">Astro Hotel</h5>
+                        <div class="image-wrap">
+                            <img class="room-image" src="./images/room_1.jpg" alt="">
+                            <h5 class="room-name">Astro Hotel</h5>
+                        </div>
                     </div>
-                    <div class="room-infoo-wrap">
+                    <div class="room-info-wrap">
                         <span class="room-price">$200 <span class="per-night">Per night</span></span>
                         <p class="paragraph">
                             ...
@@ -198,10 +200,12 @@
                 </div>
                 <div class="grid rooms-grid">
                     <div class="grid-item featured-rooms">
-                        <img class="room-image" src="./images/room_2.jpg" alt="">
-                        <h5 class="room-name">Astro Hotel</h5>
+                        <div class="image-wrap">
+                            <img class="room-image" src="./images/room_2.jpg" alt="">
+                            <h5 class="room-name">Astro Hotel</h5>
+                        </div>
                     </div>
-                    <div class="room-infoo-wrap">
+                    <div class="room-info-wrap">
                         <span class="room-price">$200 <span class="per-night">Per night</span></span>
                         <p class="paragraph">
                             ...
@@ -211,10 +215,12 @@
                 </div>
                 <div class="grid rooms-grid">
                     <div class="grid-item featured-rooms">
-                        <img class="room-image" src="./images/room_3.jpg" alt="">
-                        <h5 class="room-name">Astro Hotel</h5>
+                        <div class="image-wrap">
+                            <img class="room-image" src="./images/room_3.jpg" alt="">
+                            <h5 class="room-name">Astro Hotel</h5>
+                        </div>
                     </div>
-                    <div class="room-infoo-wrap">
+                    <div class="room-info-wrap">
                         <span class="room-price">$200 <span class="per-night">Per night</span></span>
                         <p class="paragraph">
                             ...
@@ -224,10 +230,12 @@
                 </div>
                 <div class="grid rooms-grid">
                     <div class="grid-item featured-rooms">
-                        <img class="room-image" src="./images/room_4.jpg" alt="">
-                        <h5 class="room-name">Astro Hotel</h5>
+                        <div class="image-wrap">
+                            <img class="room-image" src="./images/room_4.jpg" alt="">
+                            <h5 class="room-name">Astro Hotel</h5>
+                        </div>
                     </div>
-                    <div class="room-infoo-wrap">
+                    <div class="room-info-wrap">
                         <span class="room-price">$200 <span class="per-night">Per night</span></span>
                         <p class="paragraph">
                             ...
@@ -250,14 +258,51 @@
                     <form action="" class="form contact-form">
                         <div class="input-group-wrap">
                             <div class="input-group">
-                                <input type="text" class="input" placeholder="Name">
+                                <input type="text" class="input" placeholder="Name" required>
+                                <span class="bar"></span>
+                            </div>
+                            <div class="input-group">
+                                <input type="email" class="input" placeholder="E-mail" required>
                                 <span class="bar"></span>
                             </div>
                         </div>
+                        <div class="input-group">
+                            <input type="text" class="input" placeholder="Subject" required>
+                            <span class="bar"></span>
+                        </div>
+                        <div class="input-group">
+                            <textarea class="input" cols="30" rows="8" placeholder="Discription" required></textarea>
+                            <span class="bar"></span>
+                        </div>
+                        <button type="submit" class="btn form-btn btn-pur">Send Message
+                            <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+                        </button>
                     </form>
                 </div>
         </section>
     </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-conteent-band">
+                    <a href="index.html" class="logo">
+                        <img class="logo-image" src="./images/logo.png" alt="">
+                    </a>
+                    <div class="paragraph">
+                        ...
+                    </div>
+                </div>
+                <div class="social-media-wrap">
+                    <h4 class="footer-heading">Follow Us</h4>
+                    <div class="social-media">
+                        <a href="#" class="sm-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="sm-link"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#" class="sm-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
